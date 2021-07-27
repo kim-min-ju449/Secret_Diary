@@ -12,6 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:typeface="serif"
         android:text="@string/title1"
         android:textColor="@color/white"
         android:textSize="50dp"
@@ -19,6 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:typeface="serif"
         android:text="@string/title2"
         android:textColor="@color/white"
         android:textSize="50dp"
@@ -26,6 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:typeface="serif"
         android:text="@string/title3"
         android:textColor="@color/white"
         android:textSize="50dp"
