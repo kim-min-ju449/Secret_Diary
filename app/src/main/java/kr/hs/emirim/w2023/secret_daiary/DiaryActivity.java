@@ -6,7 +6,13 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class DiaryActivity extends AppCompatActivity {
+    long mNow;
+    Date mDate;
+    SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

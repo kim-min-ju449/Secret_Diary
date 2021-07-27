@@ -7,20 +7,32 @@
     android:orientation="vertical"
     android:background="@drawable/background">
     <TextView
+
         android:text="오늘 말하고 싶었던 모든 이야기들"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:textColor="@color/white"/>
     <EditText
-        android:id="@+id/diary"
+        android:id="@+id/title_diary"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="50dp"
+        android:background="@color/title"
+        android:shadowColor="@color/black"
+        android:hint="제목을 입력하세요"/>
+    <EditText
+
+        android:id="@+id/main_diary"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
         android:background="@color/white"
+
         android:hint="일기를 입력하시요"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="저장하기"/>
+        android:text="저장하기"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
 
 </LinearLayout>
 
