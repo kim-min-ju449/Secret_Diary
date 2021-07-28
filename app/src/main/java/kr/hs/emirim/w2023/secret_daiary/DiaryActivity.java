@@ -1,3 +1,4 @@
+
 package kr.hs.emirim.w2023.secret_daiary;
 
 
@@ -14,9 +15,6 @@ import java.util.Date;
 
 public class DiaryActivity extends AppCompatActivity {
 
-    long mNow;
-    Date mDate;
-    SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
 
     @Override

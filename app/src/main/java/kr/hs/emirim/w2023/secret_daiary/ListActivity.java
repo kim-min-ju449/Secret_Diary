@@ -13,19 +13,31 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
 public class ListActivity extends AppCompatActivity {
-    Button btn = findViewById(R.id.btn_j);
-
-
+    MyDB dpHelper;
+    EditText title_diary;
     SQLiteDatabase db;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listdiary);
+
     }
+
+//        Button btn = findViewById(R.id.btn_j);
+//        title_diary=findViewById(R.id.title_diary);
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                db = dpHelper.getWritableDatabase();
+//                db.execSQL("insert into groupTB values('"+ title_diary.getText().toString() +"', "+ title_diary.getText().toString() +");");
+//
+//                db.close();
+//                Toast.makeText(getApplicationContext(), "정상적으로 행이 삽입 되었습니다.", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
 
 
 
@@ -38,7 +50,7 @@ public class ListActivity extends AppCompatActivity {
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("create table groupTB (name char(20), date integer);");
+            db.execSQL("create table groupTB (name char(20), date date);");
         }
 
         @Override
