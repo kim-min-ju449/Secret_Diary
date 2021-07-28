@@ -34,6 +34,7 @@
         android:layout_marginLeft="10dp"
         android:hint="일기를 입력하시요"/>
     <Button
+        android:id="@+id/btn_j"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="저장하기"

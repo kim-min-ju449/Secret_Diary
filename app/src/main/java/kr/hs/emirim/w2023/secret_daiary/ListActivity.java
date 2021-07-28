@@ -13,15 +13,23 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class ListActivity extends AppCompatActivity {
+    Button btn = findViewById(R.id.btn_j);
+
 
     SQLiteDatabase db;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listdiary);
     }
+
+
+
+
     public class MyDB extends SQLiteOpenHelper{
 
         public MyDB(Context context){
@@ -34,7 +42,7 @@ public class ListActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
         }
     }
