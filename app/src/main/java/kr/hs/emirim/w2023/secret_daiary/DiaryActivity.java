@@ -21,4 +21,6 @@ public class DiaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diary_activity);
     }
+
+
 }
