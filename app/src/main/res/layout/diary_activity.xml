@@ -12,20 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:textColor="@color/white"/>
+
     <EditText
         android:id="@+id/title_diary"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/title"
-        android:shadowColor="@color/black"
-        android:hint="제목을 입력하세요"/>
+        android:hint="제목을 입력하세요"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:maxLength="20"
+        android:shadowColor="@color/black" />
+
     <EditText
 
         android:id="@+id/main_diary"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:background="@color/white"
-
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:hint="일기를 입력하시요"/>
     <Button
         android:layout_width="wrap_content"
