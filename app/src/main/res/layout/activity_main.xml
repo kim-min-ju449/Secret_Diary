@@ -37,21 +37,13 @@
         android:id="@+id/button1"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:text="일기쓰기"
+        android:text="시작하기"
         android:layout_marginTop="10dp"
         android:textSize="30sp"
         android:background="@drawable/soild_button"
         android:backgroundTint="@color/white"
         />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/soild_button"
-        android:backgroundTint="@color/btn2"
-        android:text="목록보기,\n이어쓰기"
-        android:textSize="20sp" />
+
 
 </LinearLayout>

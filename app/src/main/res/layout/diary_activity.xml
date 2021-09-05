@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    tools:context=".MainActivity"
     android:orientation="vertical"
     android:background="@drawable/background">
-    <TextView
 
-        android:text="오늘 말하고 싶었던 모든 이야기들"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textColor="@color/white"/>
-
-    <EditText
-        android:id="@+id/title_diary"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/title"
-        android:hint="제목을 입력하세요"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:maxLength="20"
-        android:shadowColor="@color/black" />
-
-    <EditText
-
-        android:id="@+id/main_diary"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:background="@color/white"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:hint="일기를 입력하시요"/>
-    <Button
-        android:id="@+id/btn_j"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="저장하기"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"/>
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/et"
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"/>
+        <Button
+            android:text="저장"
+            android:onClick="insert"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+    </ListView>
 
 </LinearLayout>
-

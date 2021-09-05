@@ -1,22 +1,15 @@
 package kr.hs.emirim.w2023.secret_daiary;
 
-import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ListActivity extends AppCompatActivity {
     MyDB dpHelper;
@@ -31,7 +24,7 @@ public class ListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listdiary);
+        setContentView(R.layout.board);
 
 //        btn=findViewById(R.id.btn_j);
 //        btn.setOnClickListener(new View.OnClickListener() {
@@ -85,4 +78,3 @@ public class ListActivity extends AppCompatActivity {
 
     }
 }
-
