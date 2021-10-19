@@ -9,14 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button btn , btn2;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn = findViewById(R.id.button1);
+        btn = findViewById(R.id.button2);
+        btn2 = findViewById(R.id.button1);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RealDiaryActivity.class);
+
+
+                startActivity(intent);
+
+            }
+        });
 
 
 
